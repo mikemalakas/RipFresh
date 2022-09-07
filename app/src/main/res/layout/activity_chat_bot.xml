@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatBot"
+    android:background="#0099CC">
+
+    <RelativeLayout
+        android:id="@+id/upper"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FF781F"
+        android:gravity="">
+
+        <Button
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignStart="@id/upper"
+            android:background="@drawable/back_arrow_small"/>
+
+    </RelativeLayout>
+
+
+
+    <!--recycler view to display our chats-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idRVChats"
+        android:layout_below="@id/upper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/idLLMessage" />
+
+    <LinearLayout
+        android:id="@+id/idLLMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_marginBottom="12dp">
+
+        <!--edit text to enter message-->
+        <EditText
+            android:id="@+id/idEdtMessage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_text_custom_white"
+            android:layout_weight="4"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:paddingStart="20dp"
+            android:hint="Enter Message" />
+
+        <!--button to send message-->
+        <ImageButton
+            android:id="@+id/idIBSend"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/orange_button"
+            android:src="@drawable/send_btn"
+            android:tint="@color/white" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
