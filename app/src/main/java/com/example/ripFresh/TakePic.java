@@ -39,6 +39,7 @@ public class TakePic extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_take_pic);
 
+        //back button
         button = (Button) findViewById(R.id.gobck_btn);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,7 +52,7 @@ public class TakePic extends AppCompatActivity {
 
         result = findViewById(R.id.result);
         confidence = findViewById(R.id.confidence);
-        imageView = findViewById(R.id.imageView);
+        imageView = findViewById(R.id.imageView2);
         picture = findViewById(R.id.button);
 
         picture.setOnClickListener(new View.OnClickListener() {
