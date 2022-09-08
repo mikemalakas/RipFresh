@@ -30,7 +30,7 @@ public class TakePic extends AppCompatActivity {
 
     TextView result, confidence;
     ImageView imageView;
-    Button picture;
+    private Button picture,button;
     int imageSize = 224;
 
 
@@ -39,9 +39,15 @@ public class TakePic extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_take_pic);
 
-        Button btn = findViewById(R.id.gobck_btn);
-        btn.setOnClickListener(v -> onBackPressed());
+        button = (Button) findViewById(R.id.gobck_btn);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
 
+            }
+        });
 
         result = findViewById(R.id.result);
         confidence = findViewById(R.id.confidence);

@@ -1,7 +1,9 @@
 package com.example.ripFresh;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
@@ -23,6 +25,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 
 public class ChatBot extends AppCompatActivity {
+    private Button button1;
 
     //creating variables for our widgets in xml file.
     private RecyclerView chatsRV;
@@ -40,6 +43,18 @@ public class ChatBot extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat_bot);
+
+        //back
+        button1 = (Button) findViewById(R.id.cht_bck_btn);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), About_Us.class);
+                startActivity(intent);
+
+            }
+        });
+
         //on below line we are initializing all our views.
         chatsRV = findViewById(R.id.idRVChats);
         sendMsgIB = findViewById(R.id.idIBSend);
@@ -117,6 +132,8 @@ public class ChatBot extends AppCompatActivity {
         });
         //at last adding json object request to our queue.
         queue.add(jsonObjectRequest);
+
+
 
 
     }

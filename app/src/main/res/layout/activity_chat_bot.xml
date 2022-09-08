@@ -10,16 +10,18 @@
     <RelativeLayout
         android:id="@+id/upper"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="#FF781F"
-        android:gravity="">
+        android:layout_height="65dp"
+        android:background="@drawable/upper_right_design">
 
         <Button
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_marginTop="5dp"
-            android:layout_alignStart="@id/upper"
-            android:background="@drawable/back_arrow_small"/>
+            android:id="@+id/cht_bck_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/orange_button"
+            android:drawableTop="@drawable/back_arrow_small"
+            android:paddingTop="8dp" />
 
     </RelativeLayout>
 
