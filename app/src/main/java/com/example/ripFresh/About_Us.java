@@ -26,6 +26,8 @@ public class About_Us extends AppCompatActivity {
             }
         });
 
+        //hello
+
         button2 = (Button) findViewById(R.id.smllbtn_bck);
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
