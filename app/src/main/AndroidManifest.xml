@@ -4,11 +4,9 @@
     <!-- permissions for internet -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-
-
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -19,15 +17,18 @@
         android:theme="@style/Theme.GFGBot"
         android:usesCleartextTraffic="true">
         <activity
-            android:name="com.example.ripFresh.TakePic"
+            android:name=".HowToUse"
             android:exported="false" />
         <activity
-            android:name="com.example.ripFresh.About_Us"
+            android:name=".TakePic"
             android:exported="false" />
         <activity
-            android:name="com.example.ripFresh.ChatBot"
+            android:name=".About_Us"
             android:exported="false" />
-        <activity android:name="com.example.ripFresh.MainActivity">
+        <activity
+            android:name=".ChatBot"
+            android:exported="false" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
