@@ -52,7 +52,7 @@ public class TakePic extends AppCompatActivity {
 
         result = findViewById(R.id.result);
         confidence = findViewById(R.id.confidence);
-        imageView = findViewById(R.id.imageView2);
+        imageView = findViewById(R.id.imageView);
         picture = findViewById(R.id.button);
 
         picture.setOnClickListener(new View.OnClickListener() {
