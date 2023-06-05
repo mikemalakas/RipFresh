@@ -5,13 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ChatBot"
-    android:background="#0099CC">
+    android:background="#5EC6D4">
 
     <RelativeLayout
         android:id="@+id/upper"
         android:layout_width="match_parent"
         android:layout_height="65dp"
-        android:background="@drawable/upper_right_design">
+        android:background="@drawable/header">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="RipFresh Bot"
+            android:fontFamily="@font/bungee_regular"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="100dp"
+            />
+
+
 
         <Button
             android:id="@+id/cht_bck_btn"

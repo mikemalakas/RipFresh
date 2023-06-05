@@ -5,19 +5,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0099CC"
+    android:background="@drawable/main_bg"
     android:orientation="vertical">
-
-    <ImageView
-        android:id="@+id/ripfreshIcon"
-        android:layout_width="259dp"
-        android:layout_height="232dp"
-        android:layout_marginTop="4dp"
-        android:src="@drawable/ripfreshicon"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="ImageContrastCheck,ImageContrastCheck" />
 
 
     <LinearLayout
@@ -25,29 +14,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal|center_vertical"
-        android:layout_marginTop="4dp"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintEnd_toStartOf="@+id/linearLayout"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/ripfreshIcon"
-        app:layout_constraintTop_toBottomOf="@+id/ripfreshIcon">
+        tools:layout_editor_absoluteY="240dp">
 
-        <Button
-            android:id="@+id/gallery_btn"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:background="@drawable/circle_button"
-            android:drawableTop="@drawable/gallery_icon"
-            android:paddingTop="20dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/merriweather"
-            android:text="GALLERY"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
     </LinearLayout>
 
 
@@ -64,21 +35,6 @@
         app:layout_constraintStart_toStartOf="@+id/linearLayout3"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
-        <Button
-            android:id="@+id/about_btn"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:background="@drawable/circle_button"
-            android:drawableTop="@drawable/aboutus_icon"
-            android:paddingTop="20dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/merriweather"
-            android:text="ABOUT US\n"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
     </LinearLayout>
 
 
@@ -95,22 +51,6 @@
         app:layout_constraintStart_toStartOf="@+id/linearLayout"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
-        <Button
-            android:id="@+id/how_btn"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:background="@drawable/circle_button"
-            android:drawableTop="@drawable/how_icon"
-            android:paddingTop="20dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/merriweather"
-            android:text="HOW TO\nUSE"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -127,21 +67,6 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
         app:layout_constraintVertical_bias="0.0">
 
-        <Button
-            android:id="@+id/settings_btn"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:background="@drawable/circle_button"
-            android:drawableTop="@drawable/settings_icon"
-            android:paddingTop="20dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/merriweather"
-            android:text="SETTINGS"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -159,21 +84,6 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
         app:layout_constraintVertical_bias="0.0">
 
-        <Button
-            android:id="@+id/exit_btn"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:background="@drawable/circle_button"
-            android:drawableTop="@drawable/exitt_icon"
-            android:paddingTop="20dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/merriweather"
-            android:text="EXIT"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -181,28 +91,134 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal|center_vertical"
-        android:layout_marginTop="4dp"
         android:gravity="center"
         android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="@+id/ripfreshIcon"
-        app:layout_constraintTop_toBottomOf="@+id/ripfreshIcon">
+        tools:layout_editor_absoluteX="235dp"
+        tools:layout_editor_absoluteY="240dp">
 
-        <Button
-            android:id="@+id/scan_btn"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:background="@drawable/circle_button"
-            android:drawableTop="@drawable/cam_icon"
-            android:paddingTop="20dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/merriweather"
-            android:text="SCAN"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/merriweather"
+        android:text="SETTINGS"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="688dp" />
+
+    <Button
+        android:id="@+id/gallery_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="clear"
+        android:drawableTop="@drawable/gallery_icon"
+        android:paddingTop="20dp"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="291dp" />
+
+    <Button
+        android:id="@+id/about_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="clear"
+        android:drawableTop="@drawable/aboutus_icon"
+        android:paddingTop="20dp"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="436dp" />
+
+    <Button
+        android:id="@+id/settings_btn"
+        android:layout_width="91dp"
+        android:layout_height="83dp"
+        android:background="clear"
+        android:drawableTop="@drawable/settings_icon"
+        android:paddingTop="20dp"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="586dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/merriweather"
+        android:text="GALLERY"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="391dp" />
+
+    <Button
+        android:id="@+id/scan_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="clear"
+        android:drawableTop="@drawable/cam_icon"
+        android:paddingTop="20dp"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="291dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/merriweather"
+        android:text="ABOUT US\n"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="539dp" />
+
+    <Button
+        android:id="@+id/exit_btn"
+        android:layout_width="114dp"
+        android:layout_height="122dp"
+        android:background="clear"
+        android:drawableTop="@drawable/exitt_icon"
+        android:paddingTop="20dp"
+        tools:layout_editor_absoluteX="250dp"
+        tools:layout_editor_absoluteY="590dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/merriweather"
+        android:text="EXIT"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="277dp"
+        tools:layout_editor_absoluteY="690dp" />
+
+    <Button
+        android:id="@+id/how_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="clear"
+        android:drawableTop="@drawable/how_icon"
+        android:paddingTop="20dp"
+        tools:layout_editor_absoluteX="251dp"
+        tools:layout_editor_absoluteY="434dp" />
+
+    <TextView
+        android:layout_width="146dp"
+        android:layout_height="56dp"
+        android:fontFamily="@font/merriweather"
+        android:text="HOW TO\nUSE"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="235dp"
+        tools:layout_editor_absoluteY="539dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/merriweather"
+        android:text="SCAN"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="277dp"
+        tools:layout_editor_absoluteY="396dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

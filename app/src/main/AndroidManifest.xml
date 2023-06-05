@@ -17,6 +17,12 @@
         android:theme="@style/Theme.GFGBot"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".How_to_use3"
+            android:exported="false" />
+        <activity
+            android:name=".How_to_use_2"
+            android:exported="false" />
+        <activity
             android:name=".HowToUse"
             android:exported="false" />
         <activity

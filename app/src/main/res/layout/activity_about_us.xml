@@ -5,18 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".About_Us"
-    android:background="#0099CC">
-
-    <View
-        android:id="@+id/view"
-        android:layout_width="wrap_content"
-        android:layout_height="65dp"
-        android:background="@drawable/upper_right_design"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-    </View>
+    android:background="@drawable/aboutus_bg">
 
     <Button
         android:id="@+id/tutorial"
@@ -66,61 +55,38 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginTop="7dp"
-        android:layout_marginEnd="116dp"
         android:background="@drawable/orange_button"
         android:drawableTop="@drawable/back_arrow_small"
         android:paddingTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/view"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        android:layout_marginStart="30dp"/>
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:fontFamily="@font/bungee_regular"
-        android:text="ABOUT USS"
-        android:textColor="#EDC02C"
-        android:textSize="56dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view" />
+        tools:layout_editor_absoluteX="30dp" />
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
         app:cardCornerRadius="23dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="285dp"
+        android:layout_height="390dp"
+        android:fontFamily="@font/merriweather"
+        android:gravity="center"
+        android:text="We are a group of college students from Polytechnic University of the Philippines that are taking a Computer Engineering course specializing in Machine Learning. Our goal is to create an application that can help the users in their everyday needs. This application will also serve as our final project in our machine learning subject. Hopefully this application can help you as much as it can help us pass our subject."
+        android:textColor="@color/black"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.0">
-
-        <TextView
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
-            android:background="@color/white"
-            android:text="We are a group of College students \nthat want to make application that can help the community. This started when we group each other in the Machine Learning subject and we then create ideas that are innovative and at the same time
-        a helpful tool for the people that will use it. Though we are still a small group of people,we still believe that we can accomplish great feats in the future."
-            android:textAlignment="textStart"
-            android:textColor="@color/black"
-            android:textSize="19dp"
-            android:layout_margin="3dp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
-            android:gravity="start" />
-
-
-    </androidx.cardview.widget.CardView>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.524" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

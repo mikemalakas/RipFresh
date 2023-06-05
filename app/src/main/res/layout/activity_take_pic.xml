@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0099CC"
+    android:background="@drawable/results"
     tools:context=".MainActivity">
 
 
@@ -47,7 +47,7 @@
                 android:id="@+id/classified"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10sp"
+                android:layout_marginTop="25sp"
                 android:text="Classified as:"
                 android:textColor="@color/white"
                 android:textSize="20sp"
@@ -60,6 +60,7 @@
                 android:text=""
                 android:textAlignment="center"
                 android:textColor="#C30000"
+                android:layout_marginTop="25sp"
                 android:textSize="27sp"
                 android:textStyle="bold" />
 
@@ -67,7 +68,7 @@
                 android:id="@+id/confidencesText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30sp"
+                android:layout_marginTop="35sp"
                 android:text="Confidences:"
                 android:textColor="@color/white"
                 android:textSize="20sp"
@@ -79,6 +80,7 @@
                 android:layout_height="wrap_content"
                 android:text=""
                 android:textAlignment="center"
+                android:layout_marginTop="20sp"
                 android:textColor="#000"
                 android:textSize="22sp" />
 
